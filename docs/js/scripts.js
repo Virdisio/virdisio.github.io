@@ -49,6 +49,29 @@ function switchControlSlider(){
 	}
 }
 
+// Stop playing youtube videos in modal while closing it
+function stopYouTubeOnModalClose(){
+	var modals = document.querySelectorAll(".modal"),
+		iframe;
+	if(modals.length){
+		modals.forEach(function(modal) {
+			iframe = modal.querySelector("iframe");
+			if(iframe){
+				if(iframe.src.indexOf("youtube.com")!=-1 || iframe.src.indexOf("youtu.be")!=-1){
+					modal.addEventListener('hide.bs.modal', function (event) {
+						var iframe = this.querySelector("iframe");
+						iframe.setAttribute("data-src",iframe.src);
+						iframe.src = "";
+						setTimeout(function(){
+							iframe.src = iframe.getAttribute("data-src");
+						},100);
+					})
+				}
+			}
+		});
+	}
+}
+
 // Init AOS plugin (blocks animations)
 function initAnimations(duration){
 	if(typeof(AOS) !== 'undefined'){
@@ -226,6 +249,7 @@ function ajaxFormShowResult(success, text, alerts){
 document.addEventListener("DOMContentLoaded", function(){
 	setBackgrounds();
 	switchControlSlider();
+	stopYouTubeOnModalClose();
 	initAnimations();
 	ajaxFormInit();
 });

@@ -6,11 +6,11 @@ error_reporting(E_ALL & ~E_NOTICE);
 /* SETTINGS */
 
 // URL of this file using https
-$scriptUrl = "https://".$_SERVER["HTTP_HOST"].$_SERVER["SCRIPT_NAME"];
+$scriptUrl = "https://".$_SERVER["HTTP_HOST"].$_SERVER["SCRIPT_NAME"]; // used for Viber integration only
 // Email "subject"
 $title = 'New message from my Landing page';
 // Email field "From" - name of sender (e.g. your first & last name)
-$from_name = "John Jonson";
+$from_name = "Designmodo leads notifier";
 // Email field "From" - email of sender (e.g. "robot@domain.com")
 $from_email = "robot@domain.com";
 // Email to receive message - PUT YOUR EMAIL HERE (or leave it blank if you won't receive emails)
@@ -27,13 +27,13 @@ $viberToken = '';
 // MailChimp integration: Your API key 
 //(leave string empty if you don't want to use MailChimp integration or check how to get your API key here: https://designmodo.com/startup/documentation/#mailchimp)
 $MailChimpAPIkey = '';
-// MailChimp integration: ID of list where contact will be added to
+// MailChimp integration: an ID of a list where contact will be added to
 //(leave string empty if you don't want to use MailChimp integration or check how to get ID of list here: https://designmodo.com/startup/documentation/#mailchimp)
 $MailChimpListID = '';
 // SendInBlue integration: Your API key 
 //(leave string empty if you don't want to use SendInBlue integration or check how to get your API key here: https://designmodo.com/startup/documentation/#sendinblue)
 $sendInBlueAPIkey = '';
-// SendInBlue integration: ID of list where contact will be added to
+// SendInBlue integration: an ID of a list where contact will be added to
 //(leave string empty if you don't want to use SendInBlue integration or check how to get ID of list here: https://designmodo.com/startup/documentation/#sendinblue)
 $sendInBlueListIDs = array(); // IDs of lists to add contact to; separate by comma
 // HubSpot integration: Your API key 
