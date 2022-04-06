@@ -696,15 +696,15 @@ progress {
   display: flex;
   flex-wrap: wrap;
   margin-top: calc(-1 * var(--bs-gutter-y));
-  margin-right: calc(-.5 * var(--bs-gutter-x));
-  margin-left: calc(-.5 * var(--bs-gutter-x));
+  margin-right: calc(-0.5 * var(--bs-gutter-x));
+  margin-left: calc(-0.5 * var(--bs-gutter-x));
 }
 .row > * {
   flex-shrink: 0;
   width: 100%;
   max-width: 100%;
-  padding-right: calc(var(--bs-gutter-x) * .5);
-  padding-left: calc(var(--bs-gutter-x) * .5);
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
   margin-top: var(--bs-gutter-y);
 }
 
@@ -8043,10 +8043,10 @@ body, p {
   border-color: #8bd74e;
 }
 
-.form-switch .form-check-input.basic-action-1 {
+.form-switch .form-check-input.basic-action-1 + .form-switch-wrapper {
   background: rgba(139, 215, 78, 0.2);
 }
-.form-switch .form-check-input.basic-action-1 + .form-switch-pin {
+.form-switch .form-check-input.basic-action-1 + .form-switch-wrapper .form-switch-pin {
   background: #8bd74e;
 }
 
@@ -8056,10 +8056,10 @@ body, p {
   border-color: #8bd74e;
 }
 
-.form-switch .form-check-input.checked-action-1:checked {
+.form-switch .form-check-input.checked-action-1:checked + .form-switch-wrapper {
   background: rgba(139, 215, 78, 0.2);
 }
-.form-switch .form-check-input.checked-action-1:checked + .form-switch-pin {
+.form-switch .form-check-input.checked-action-1:checked + .form-switch-wrapper .form-switch-pin {
   background: #8bd74e;
 }
 
@@ -8097,10 +8097,10 @@ body, p {
   border-color: #6610F2;
 }
 
-.form-switch .form-check-input.basic-action-2 {
+.form-switch .form-check-input.basic-action-2 + .form-switch-wrapper {
   background: rgba(102, 16, 242, 0.2);
 }
-.form-switch .form-check-input.basic-action-2 + .form-switch-pin {
+.form-switch .form-check-input.basic-action-2 + .form-switch-wrapper .form-switch-pin {
   background: #6610F2;
 }
 
@@ -8110,10 +8110,10 @@ body, p {
   border-color: #6610F2;
 }
 
-.form-switch .form-check-input.checked-action-2:checked {
+.form-switch .form-check-input.checked-action-2:checked + .form-switch-wrapper {
   background: rgba(102, 16, 242, 0.2);
 }
-.form-switch .form-check-input.checked-action-2:checked + .form-switch-pin {
+.form-switch .form-check-input.checked-action-2:checked + .form-switch-wrapper .form-switch-pin {
   background: #6610F2;
 }
 
@@ -8151,10 +8151,10 @@ body, p {
   border-color: #B822FF;
 }
 
-.form-switch .form-check-input.basic-action-3 {
+.form-switch .form-check-input.basic-action-3 + .form-switch-wrapper {
   background: rgba(184, 34, 255, 0.2);
 }
-.form-switch .form-check-input.basic-action-3 + .form-switch-pin {
+.form-switch .form-check-input.basic-action-3 + .form-switch-wrapper .form-switch-pin {
   background: #B822FF;
 }
 
@@ -8164,10 +8164,10 @@ body, p {
   border-color: #B822FF;
 }
 
-.form-switch .form-check-input.checked-action-3:checked {
+.form-switch .form-check-input.checked-action-3:checked + .form-switch-wrapper {
   background: rgba(184, 34, 255, 0.2);
 }
-.form-switch .form-check-input.checked-action-3:checked + .form-switch-pin {
+.form-switch .form-check-input.checked-action-3:checked + .form-switch-wrapper .form-switch-pin {
   background: #B822FF;
 }
 
@@ -8205,10 +8205,10 @@ body, p {
   border-color: #D63384;
 }
 
-.form-switch .form-check-input.basic-action-4 {
+.form-switch .form-check-input.basic-action-4 + .form-switch-wrapper {
   background: rgba(214, 51, 132, 0.2);
 }
-.form-switch .form-check-input.basic-action-4 + .form-switch-pin {
+.form-switch .form-check-input.basic-action-4 + .form-switch-wrapper .form-switch-pin {
   background: #D63384;
 }
 
@@ -8218,10 +8218,10 @@ body, p {
   border-color: #D63384;
 }
 
-.form-switch .form-check-input.checked-action-4:checked {
+.form-switch .form-check-input.checked-action-4:checked + .form-switch-wrapper {
   background: rgba(214, 51, 132, 0.2);
 }
-.form-switch .form-check-input.checked-action-4:checked + .form-switch-pin {
+.form-switch .form-check-input.checked-action-4:checked + .form-switch-wrapper .form-switch-pin {
   background: #D63384;
 }
 
@@ -8259,10 +8259,10 @@ body, p {
   border-color: #DC3545;
 }
 
-.form-switch .form-check-input.basic-action-5 {
+.form-switch .form-check-input.basic-action-5 + .form-switch-wrapper {
   background: rgba(220, 53, 69, 0.2);
 }
-.form-switch .form-check-input.basic-action-5 + .form-switch-pin {
+.form-switch .form-check-input.basic-action-5 + .form-switch-wrapper .form-switch-pin {
   background: #DC3545;
 }
 
@@ -8272,10 +8272,10 @@ body, p {
   border-color: #DC3545;
 }
 
-.form-switch .form-check-input.checked-action-5:checked {
+.form-switch .form-check-input.checked-action-5:checked + .form-switch-wrapper {
   background: rgba(220, 53, 69, 0.2);
 }
-.form-switch .form-check-input.checked-action-5:checked + .form-switch-pin {
+.form-switch .form-check-input.checked-action-5:checked + .form-switch-wrapper .form-switch-pin {
   background: #DC3545;
 }
 
@@ -8313,10 +8313,10 @@ body, p {
   border-color: #FD7E14;
 }
 
-.form-switch .form-check-input.basic-action-6 {
+.form-switch .form-check-input.basic-action-6 + .form-switch-wrapper {
   background: rgba(253, 126, 20, 0.2);
 }
-.form-switch .form-check-input.basic-action-6 + .form-switch-pin {
+.form-switch .form-check-input.basic-action-6 + .form-switch-wrapper .form-switch-pin {
   background: #FD7E14;
 }
 
@@ -8326,10 +8326,10 @@ body, p {
   border-color: #FD7E14;
 }
 
-.form-switch .form-check-input.checked-action-6:checked {
+.form-switch .form-check-input.checked-action-6:checked + .form-switch-wrapper {
   background: rgba(253, 126, 20, 0.2);
 }
-.form-switch .form-check-input.checked-action-6:checked + .form-switch-pin {
+.form-switch .form-check-input.checked-action-6:checked + .form-switch-wrapper .form-switch-pin {
   background: #FD7E14;
 }
 
@@ -8367,10 +8367,10 @@ body, p {
   border-color: #FFA722;
 }
 
-.form-switch .form-check-input.basic-action-7 {
+.form-switch .form-check-input.basic-action-7 + .form-switch-wrapper {
   background: rgba(255, 167, 34, 0.2);
 }
-.form-switch .form-check-input.basic-action-7 + .form-switch-pin {
+.form-switch .form-check-input.basic-action-7 + .form-switch-wrapper .form-switch-pin {
   background: #FFA722;
 }
 
@@ -8380,10 +8380,10 @@ body, p {
   border-color: #FFA722;
 }
 
-.form-switch .form-check-input.checked-action-7:checked {
+.form-switch .form-check-input.checked-action-7:checked + .form-switch-wrapper {
   background: rgba(255, 167, 34, 0.2);
 }
-.form-switch .form-check-input.checked-action-7:checked + .form-switch-pin {
+.form-switch .form-check-input.checked-action-7:checked + .form-switch-wrapper .form-switch-pin {
   background: #FFA722;
 }
 
@@ -8421,10 +8421,10 @@ body, p {
   border-color: #8BD74E;
 }
 
-.form-switch .form-check-input.basic-action-8 {
+.form-switch .form-check-input.basic-action-8 + .form-switch-wrapper {
   background: rgba(139, 215, 78, 0.2);
 }
-.form-switch .form-check-input.basic-action-8 + .form-switch-pin {
+.form-switch .form-check-input.basic-action-8 + .form-switch-wrapper .form-switch-pin {
   background: #8BD74E;
 }
 
@@ -8434,10 +8434,10 @@ body, p {
   border-color: #8BD74E;
 }
 
-.form-switch .form-check-input.checked-action-8:checked {
+.form-switch .form-check-input.checked-action-8:checked + .form-switch-wrapper {
   background: rgba(139, 215, 78, 0.2);
 }
-.form-switch .form-check-input.checked-action-8:checked + .form-switch-pin {
+.form-switch .form-check-input.checked-action-8:checked + .form-switch-wrapper .form-switch-pin {
   background: #8BD74E;
 }
 
@@ -8475,10 +8475,10 @@ body, p {
   border-color: #15152D;
 }
 
-.form-switch .form-check-input.basic-dark-1 {
+.form-switch .form-check-input.basic-dark-1 + .form-switch-wrapper {
   background: rgba(21, 21, 45, 0.2);
 }
-.form-switch .form-check-input.basic-dark-1 + .form-switch-pin {
+.form-switch .form-check-input.basic-dark-1 + .form-switch-wrapper .form-switch-pin {
   background: #15152D;
 }
 
@@ -8488,10 +8488,10 @@ body, p {
   border-color: #15152D;
 }
 
-.form-switch .form-check-input.checked-dark-1:checked {
+.form-switch .form-check-input.checked-dark-1:checked + .form-switch-wrapper {
   background: rgba(21, 21, 45, 0.2);
 }
-.form-switch .form-check-input.checked-dark-1:checked + .form-switch-pin {
+.form-switch .form-check-input.checked-dark-1:checked + .form-switch-wrapper .form-switch-pin {
   background: #15152D;
 }
 
@@ -8529,10 +8529,10 @@ body, p {
   border-color: rgba(21, 21, 45, 0.7);
 }
 
-.form-switch .form-check-input.basic-dark-2 {
+.form-switch .form-check-input.basic-dark-2 + .form-switch-wrapper {
   background: rgba(21, 21, 45, 0.2);
 }
-.form-switch .form-check-input.basic-dark-2 + .form-switch-pin {
+.form-switch .form-check-input.basic-dark-2 + .form-switch-wrapper .form-switch-pin {
   background: rgba(21, 21, 45, 0.7);
 }
 
@@ -8542,10 +8542,10 @@ body, p {
   border-color: rgba(21, 21, 45, 0.7);
 }
 
-.form-switch .form-check-input.checked-dark-2:checked {
+.form-switch .form-check-input.checked-dark-2:checked + .form-switch-wrapper {
   background: rgba(21, 21, 45, 0.2);
 }
-.form-switch .form-check-input.checked-dark-2:checked + .form-switch-pin {
+.form-switch .form-check-input.checked-dark-2:checked + .form-switch-wrapper .form-switch-pin {
   background: rgba(21, 21, 45, 0.7);
 }
 
@@ -8583,10 +8583,10 @@ body, p {
   border-color: rgba(21, 21, 45, 0.3);
 }
 
-.form-switch .form-check-input.basic-dark-3 {
+.form-switch .form-check-input.basic-dark-3 + .form-switch-wrapper {
   background: rgba(21, 21, 45, 0.2);
 }
-.form-switch .form-check-input.basic-dark-3 + .form-switch-pin {
+.form-switch .form-check-input.basic-dark-3 + .form-switch-wrapper .form-switch-pin {
   background: rgba(21, 21, 45, 0.3);
 }
 
@@ -8596,10 +8596,10 @@ body, p {
   border-color: rgba(21, 21, 45, 0.3);
 }
 
-.form-switch .form-check-input.checked-dark-3:checked {
+.form-switch .form-check-input.checked-dark-3:checked + .form-switch-wrapper {
   background: rgba(21, 21, 45, 0.2);
 }
-.form-switch .form-check-input.checked-dark-3:checked + .form-switch-pin {
+.form-switch .form-check-input.checked-dark-3:checked + .form-switch-wrapper .form-switch-pin {
   background: rgba(21, 21, 45, 0.3);
 }
 
@@ -8637,10 +8637,10 @@ body, p {
   border-color: #ffffff;
 }
 
-.form-switch .form-check-input.basic-light-1 {
+.form-switch .form-check-input.basic-light-1 + .form-switch-wrapper {
   background: rgba(255, 255, 255, 0.2);
 }
-.form-switch .form-check-input.basic-light-1 + .form-switch-pin {
+.form-switch .form-check-input.basic-light-1 + .form-switch-wrapper .form-switch-pin {
   background: #ffffff;
 }
 
@@ -8650,10 +8650,10 @@ body, p {
   border-color: #ffffff;
 }
 
-.form-switch .form-check-input.checked-light-1:checked {
+.form-switch .form-check-input.checked-light-1:checked + .form-switch-wrapper {
   background: rgba(255, 255, 255, 0.2);
 }
-.form-switch .form-check-input.checked-light-1:checked + .form-switch-pin {
+.form-switch .form-check-input.checked-light-1:checked + .form-switch-wrapper .form-switch-pin {
   background: #ffffff;
 }
 
@@ -8691,10 +8691,10 @@ body, p {
   border-color: rgba(255, 255, 255, 0.7);
 }
 
-.form-switch .form-check-input.basic-light-2 {
+.form-switch .form-check-input.basic-light-2 + .form-switch-wrapper {
   background: rgba(255, 255, 255, 0.2);
 }
-.form-switch .form-check-input.basic-light-2 + .form-switch-pin {
+.form-switch .form-check-input.basic-light-2 + .form-switch-wrapper .form-switch-pin {
   background: rgba(255, 255, 255, 0.7);
 }
 
@@ -8704,10 +8704,10 @@ body, p {
   border-color: rgba(255, 255, 255, 0.7);
 }
 
-.form-switch .form-check-input.checked-light-2:checked {
+.form-switch .form-check-input.checked-light-2:checked + .form-switch-wrapper {
   background: rgba(255, 255, 255, 0.2);
 }
-.form-switch .form-check-input.checked-light-2:checked + .form-switch-pin {
+.form-switch .form-check-input.checked-light-2:checked + .form-switch-wrapper .form-switch-pin {
   background: rgba(255, 255, 255, 0.7);
 }
 
@@ -8745,10 +8745,10 @@ body, p {
   border-color: rgba(255, 255, 255, 0.45);
 }
 
-.form-switch .form-check-input.basic-light-3 {
+.form-switch .form-check-input.basic-light-3 + .form-switch-wrapper {
   background: rgba(255, 255, 255, 0.2);
 }
-.form-switch .form-check-input.basic-light-3 + .form-switch-pin {
+.form-switch .form-check-input.basic-light-3 + .form-switch-wrapper .form-switch-pin {
   background: rgba(255, 255, 255, 0.45);
 }
 
@@ -8758,10 +8758,10 @@ body, p {
   border-color: rgba(255, 255, 255, 0.45);
 }
 
-.form-switch .form-check-input.checked-light-3:checked {
+.form-switch .form-check-input.checked-light-3:checked + .form-switch-wrapper {
   background: rgba(255, 255, 255, 0.2);
 }
-.form-switch .form-check-input.checked-light-3:checked + .form-switch-pin {
+.form-switch .form-check-input.checked-light-3:checked + .form-switch-wrapper .form-switch-pin {
   background: rgba(255, 255, 255, 0.45);
 }
 
@@ -8799,10 +8799,10 @@ body, p {
   border-color: #15152D;
 }
 
-.form-switch .form-check-input.basic-bg-1 {
+.form-switch .form-check-input.basic-bg-1 + .form-switch-wrapper {
   background: rgba(21, 21, 45, 0.2);
 }
-.form-switch .form-check-input.basic-bg-1 + .form-switch-pin {
+.form-switch .form-check-input.basic-bg-1 + .form-switch-wrapper .form-switch-pin {
   background: #15152D;
 }
 
@@ -8812,10 +8812,10 @@ body, p {
   border-color: #15152D;
 }
 
-.form-switch .form-check-input.checked-bg-1:checked {
+.form-switch .form-check-input.checked-bg-1:checked + .form-switch-wrapper {
   background: rgba(21, 21, 45, 0.2);
 }
-.form-switch .form-check-input.checked-bg-1:checked + .form-switch-pin {
+.form-switch .form-check-input.checked-bg-1:checked + .form-switch-wrapper .form-switch-pin {
   background: #15152D;
 }
 
@@ -8853,10 +8853,10 @@ body, p {
   border-color: #F5F5F5;
 }
 
-.form-switch .form-check-input.basic-bg-2 {
+.form-switch .form-check-input.basic-bg-2 + .form-switch-wrapper {
   background: rgba(245, 245, 245, 0.2);
 }
-.form-switch .form-check-input.basic-bg-2 + .form-switch-pin {
+.form-switch .form-check-input.basic-bg-2 + .form-switch-wrapper .form-switch-pin {
   background: #F5F5F5;
 }
 
@@ -8866,10 +8866,10 @@ body, p {
   border-color: #F5F5F5;
 }
 
-.form-switch .form-check-input.checked-bg-2:checked {
+.form-switch .form-check-input.checked-bg-2:checked + .form-switch-wrapper {
   background: rgba(245, 245, 245, 0.2);
 }
-.form-switch .form-check-input.checked-bg-2:checked + .form-switch-pin {
+.form-switch .form-check-input.checked-bg-2:checked + .form-switch-wrapper .form-switch-pin {
   background: #F5F5F5;
 }
 
@@ -8907,10 +8907,10 @@ body, p {
   border-color: #ffffff;
 }
 
-.form-switch .form-check-input.basic-bg-3 {
+.form-switch .form-check-input.basic-bg-3 + .form-switch-wrapper {
   background: rgba(255, 255, 255, 0.2);
 }
-.form-switch .form-check-input.basic-bg-3 + .form-switch-pin {
+.form-switch .form-check-input.basic-bg-3 + .form-switch-wrapper .form-switch-pin {
   background: #ffffff;
 }
 
@@ -8920,10 +8920,10 @@ body, p {
   border-color: #ffffff;
 }
 
-.form-switch .form-check-input.checked-bg-3:checked {
+.form-switch .form-check-input.checked-bg-3:checked + .form-switch-wrapper {
   background: rgba(255, 255, 255, 0.2);
 }
-.form-switch .form-check-input.checked-bg-3:checked + .form-switch-pin {
+.form-switch .form-check-input.checked-bg-3:checked + .form-switch-wrapper .form-switch-pin {
   background: #ffffff;
 }
 
@@ -9106,6 +9106,11 @@ a:not([data-aos]):not(.btn):hover {
 }
 .form-control:focus:-ms-input-placeholder {
   color: transparent !important;
+}
+
+.form-select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
 }
 
 /* Fix wrong margin-left */
@@ -9427,15 +9432,15 @@ a:not([data-aos]):not(.btn):hover {
 }
 
 .ratio-4x3 {
-  --bs-aspect-ratio: calc(3 / 4 * 100%);
+  --bs-aspect-ratio: 75%;
 }
 
 .ratio-16x9 {
-  --bs-aspect-ratio: calc(9 / 16 * 100%);
+  --bs-aspect-ratio: 56.25%;
 }
 
 .ratio-21x9 {
-  --bs-aspect-ratio: calc(9 / 21 * 100%);
+  --bs-aspect-ratio: 42.8571428571%;
 }
 
 .fixed-top {

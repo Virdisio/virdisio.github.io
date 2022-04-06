@@ -194,9 +194,9 @@ body, p{
 		border-color: $color;
 	}
 	.form-switch{
-		.form-check-input.basic-#{$key}{
+		.form-check-input.basic-#{$key} + .form-switch-wrapper{
 			background: rgba($color,20%);
-			+ .form-switch-pin{
+			.form-switch-pin{
 				background: $color;
 			}
 		}
@@ -207,9 +207,9 @@ body, p{
 		border-color: $color;
 	}
 	.form-switch{
-		.form-check-input.checked-#{$key}:checked{
+		.form-check-input.checked-#{$key}:checked + .form-switch-wrapper{
 			background: rgba($color,20%);
-			+ .form-switch-pin{
+			.form-switch-pin{
 				background: $color;
 			}
 		}
@@ -407,6 +407,11 @@ a:not([data-aos]):not(.btn){
 			color:transparent !important;
 		}
 	}
+}
+
+.form-select{
+	-moz-appearance:none;
+	-webkit-appearance:none;
 }
 
 /* Fix wrong margin-left */
