@@ -342,6 +342,23 @@ $dropdown-dark-link-disabled-color: $light-3 !default;
 $dropdown-dark-header-color:        $light-1 !default;
 // scss-docs-end dropdown-dark-variables
 
+// Accordion
+
+// scss-docs-start accordion-variables
+$accordion-bg:                            transparent !default;
+$accordion-border-color:                  $dark-3 !default;
+
+$accordion-button-color:                  $dark-1 !default;
+$accordion-button-active-bg:              tint-color($action-1, 90%) !default;
+$accordion-button-active-color:           shade-color($action-1, 10%) !default;
+
+$accordion-button-focus-border-color:     $action-1 !default;
+$accordion-button-focus-box-shadow:       none !default;
+
+$accordion-icon-transform:                scaleY(-1) !default;
+// scss-docs-end accordion-variables
+
+
 // Carousel
 
 // scss-docs-start carousel-variables
